@@ -1,0 +1,13 @@
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\bin\Debug\netcoreapp3.1\UnderstandingScope.exe
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\bin\Debug\netcoreapp3.1\UnderstandingScope.deps.json
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\bin\Debug\netcoreapp3.1\UnderstandingScope.runtimeconfig.json
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\bin\Debug\netcoreapp3.1\UnderstandingScope.runtimeconfig.dev.json
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\bin\Debug\netcoreapp3.1\UnderstandingScope.dll
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\bin\Debug\netcoreapp3.1\UnderstandingScope.pdb
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\obj\Debug\netcoreapp3.1\UnderstandingScope.csprojAssemblyReference.cache
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\obj\Debug\netcoreapp3.1\UnderstandingScope.AssemblyInfoInputs.cache
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\obj\Debug\netcoreapp3.1\UnderstandingScope.AssemblyInfo.cs
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\obj\Debug\netcoreapp3.1\UnderstandingScope.csproj.CoreCompileInputs.cache
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\obj\Debug\netcoreapp3.1\UnderstandingScope.dll
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\obj\Debug\netcoreapp3.1\UnderstandingScope.pdb
+C:\Users\peter\source\repos\Tutorials\UnderstandingScope\UnderstandingScope\obj\Debug\netcoreapp3.1\UnderstandingScope.genruntimeconfig.cache

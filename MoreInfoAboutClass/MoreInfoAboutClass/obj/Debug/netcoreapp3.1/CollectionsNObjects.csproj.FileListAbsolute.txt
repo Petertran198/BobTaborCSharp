@@ -1,0 +1,12 @@
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\CollectionsNObjects.AssemblyInfoInputs.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\CollectionsNObjects.AssemblyInfo.cs
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\CollectionsNObjects.csproj.CoreCompileInputs.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\CollectionsNObjects.exe
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\CollectionsNObjects.deps.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\CollectionsNObjects.runtimeconfig.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\CollectionsNObjects.runtimeconfig.dev.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\CollectionsNObjects.dll
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\CollectionsNObjects.pdb
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\CollectionsNObjects.dll
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\CollectionsNObjects.pdb
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\CollectionsNObjects.genruntimeconfig.cache

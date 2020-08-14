@@ -1,0 +1,13 @@
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\MoreInfoAboutClass.exe
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\MoreInfoAboutClass.deps.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\MoreInfoAboutClass.runtimeconfig.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\MoreInfoAboutClass.runtimeconfig.dev.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\MoreInfoAboutClass.dll
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\MoreInfoAboutClass.pdb
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\MoreInfoAboutClass.csprojAssemblyReference.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\MoreInfoAboutClass.AssemblyInfoInputs.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\MoreInfoAboutClass.AssemblyInfo.cs
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\MoreInfoAboutClass.csproj.CoreCompileInputs.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\MoreInfoAboutClass.dll
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\MoreInfoAboutClass.pdb
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\MoreInfoAboutClass.genruntimeconfig.cache

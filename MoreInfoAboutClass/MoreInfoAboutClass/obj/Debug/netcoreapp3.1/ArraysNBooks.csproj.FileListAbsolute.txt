@@ -1,0 +1,13 @@
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\ArraysNBooks.exe
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\ArraysNBooks.deps.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\ArraysNBooks.runtimeconfig.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\ArraysNBooks.runtimeconfig.dev.json
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\ArraysNBooks.dll
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\bin\Debug\netcoreapp3.1\ArraysNBooks.pdb
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\ArraysNBooks.csprojAssemblyReference.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\ArraysNBooks.AssemblyInfoInputs.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\ArraysNBooks.AssemblyInfo.cs
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\ArraysNBooks.csproj.CoreCompileInputs.cache
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\ArraysNBooks.dll
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\ArraysNBooks.pdb
+C:\Users\peter\source\repos\Tutorials\MoreInfoAboutClass\MoreInfoAboutClass\obj\Debug\netcoreapp3.1\ArraysNBooks.genruntimeconfig.cache
