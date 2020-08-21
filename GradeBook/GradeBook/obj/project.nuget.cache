@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SbqcyIXaSqPT5ZYdR1lJLmhC6zamM+MCjcX9J/5fHwVr/dgi0q5vIfYBLBSa8pbdQ/BMlshANrCF3j2i2RzbOA==",
+  "dgSpecHash": "4Tmq8oSKOCNNxX8WKqoTRskiujOipiFnoFP0GajKN2Du3DB3DJp9UWht6vJDVy/0s11dlf/VLBHxqscK1KRWng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\peter\\source\\repos\\Tutorials\\GradeBook\\gradebook\\GradeBook.csproj",
+  "projectFilePath": "C:\\Users\\peter\\source\\repos\\Tutorials\\GradeBook\\GradeBook\\GradeBook.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

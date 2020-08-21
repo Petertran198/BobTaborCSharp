@@ -8,18 +8,13 @@ namespace GradeBook
         static void Main(string[] args)
         {
 
-
-
-            // List type is similar to array but it is dynamic, meaning that you dont have to specify a size 
-            List<double> grades = new List<double>(){60.2, 81.3, 92.2};  
-    
-            double results = 0.0;
-            foreach (double number in grades)
-            {   
-                results += number; 
-            }
-            // numeric formatting :N1 will give the result with one decimal place
-            Console.WriteLine($"The average grade is {(results/grades.Count):N1}");
+            Book book = new Book("First book");
+            book.AddGrade(10.2);
+            book.AddGrade(80.2);
+            book.AddGrade(90.1);
+            
+            book.ShowStatistics();
+          
 
 
         }
