@@ -4,14 +4,12 @@ using System.Text;
 
 namespace GradeBook
 {
-    class Book
+    public class Book
     {
         // grades is a private field and the convention is to make it lowercase 
         List<double> grades;
         string name;
-        double results = 0.0;
-        double highestGrade = double.MinValue;
-        double lowestGrade = double.MaxValue;
+
 
 
         public Book(string name)
@@ -27,21 +25,29 @@ namespace GradeBook
             grades.Add(grade);
         }
 
-        // Show the highest,average,& lowest grades
-        public void ShowStatistics()
+        // Return a instance of Statistics object that contains highest, lowest, and average grades
+        public Statistics GetStatistics()
         {
+            Statistics result = new Statistics();
+            result.Average = 0.0;
+            result.HighestGrade = double.MinValue;
+            result.LowestGrade = double.MaxValue;
 
-            foreach (double number in grades)
+            foreach (double grade in grades)
             {
-                // finds the highest number of the two and assign it to highGrade 
-                highestGrade = Math.Max(number, highestGrade);
-                lowestGrade = Math.Min(number, lowestGrade);
-                results += number;
+                // finds the highest number of the two and assign it to result.High 
+                result.HighestGrade = Math.Max(grade, result.HighestGrade);
+                result.LowestGrade = Math.Min(grade, result.LowestGrade);
+                result.Average += grade;
             }
-            // numeric formatting :N1 will give the result with one decimal place
-            Console.WriteLine($"The lowest grade is {lowestGrade:N1}");
-            Console.WriteLine($"The highest grade is {highestGrade:N1}");
-            Console.WriteLine($"The average grade is {(results / grades.Count):N1}");
+
+            result.Average /= grades.Count;
+            return result; 
+            //// numeric formatting :N1 will give the result with one decimal place
+            //Console.WriteLine($"The lowest grade is {lowestGrade:N1}");
+            //Console.WriteLine($"The highest grade is {highestGrade:N1}");
+            //Console.WriteLine($"The average grade is {(results / grades.Count):N1}");
+
         }
     }
 }
