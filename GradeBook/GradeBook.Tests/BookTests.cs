@@ -7,7 +7,7 @@ namespace GradeBook.Tests
     {
         // "[Fact]" represents a unit test method. Results in a pass or fail
         [Fact]
-        public void Test1()
+        public void BookCalculatesGrade()
         {
             //Arrange (Put together data for test)
             Book book = new Book("book1");

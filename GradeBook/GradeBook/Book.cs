@@ -8,7 +8,7 @@ namespace GradeBook
     {
         // grades is a private field and the convention is to make it lowercase 
         List<double> grades;
-        string name;
+        public string Name;
 
 
 
@@ -16,7 +16,7 @@ namespace GradeBook
         {
             // You have to instantiate it to create the list of grades or it will give a null exception because of the grades field has not been instantiated 
             grades = new List<double>() ;
-            this.name = name;
+            Name = name;
 
         }
 
@@ -43,10 +43,7 @@ namespace GradeBook
 
             result.Average /= grades.Count;
             return result; 
-            //// numeric formatting :N1 will give the result with one decimal place
-            //Console.WriteLine($"The lowest grade is {lowestGrade:N1}");
-            //Console.WriteLine($"The highest grade is {highestGrade:N1}");
-            //Console.WriteLine($"The average grade is {(results / grades.Count):N1}");
+  
 
         }
     }
