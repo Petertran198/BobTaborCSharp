@@ -19,10 +19,46 @@ namespace GradeBook
             Name = name;
 
         }
+        public void InputGrade()
+        {
+            while (true)
+            {
+                Console.WriteLine("Enter a Grade, press 'q' you are done");
+                string gradeString = Console.ReadLine();
+                if (gradeString == "q")
+                {
+                    Console.WriteLine("Grade has been inputed");
+                    break;
+                }
+                try
+                {
+                    var grade = double.Parse(gradeString);
+                    AddGrade(grade);
+                }// One try block can have multiple catch for different exception
+                catch (ArgumentException ex)
+                {
+
+                    Console.WriteLine(ex.Message);
+                }
+                catch(FormatException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+
 
         public void AddGrade(double grade)
         {
-            grades.Add(grade);
+            if (grade <= 100 && grade >= 0)
+            {
+                grades.Add(grade);
+            }
+            else//If this is not run then it will throw an argument exception
+            {
+                Console.WriteLine($"Grade of {grade} was not added must be within 1-100");
+                throw new ArgumentException($"Invalid {nameof(grade)}");
+            }
         }
 
         // Return a instance of Statistics object that contains highest, lowest, and average grades
@@ -32,8 +68,7 @@ namespace GradeBook
             result.Average = 0.0;
             result.HighestGrade = double.MinValue;
             result.LowestGrade = double.MaxValue;
-
-            foreach (double grade in grades)
+            foreach (var grade in grades)
             {
                 // finds the highest number of the two and assign it to result.High 
                 result.HighestGrade = Math.Max(grade, result.HighestGrade);
@@ -41,10 +76,55 @@ namespace GradeBook
                 result.Average += grade;
             }
 
-            result.Average /= grades.Count;
-            return result; 
-  
 
+            result.Average /= grades.Count;
+            switch (result.Average)
+            {
+                case var grade when (grade >= 90.0 && grade <= 100):
+                    result.LetterGrade = 'A';
+                    break;
+                case var grade when (grade >= 80.0 && grade < 90.0):
+                    result.LetterGrade = 'B';
+                    break; 
+                case var grade when (grade >= 70 && grade < 80):
+                    result.LetterGrade = 'C';
+                      break;
+                case var grade when (grade >= 60.0 && grade < 70):
+                    result.LetterGrade = 'D';
+                    break;
+                default:
+                    result.LetterGrade = 'F';
+                    break;
+            }
+            return result; 
+
+
+        }
+
+        public void AddLetterGrade(char letter)
+        {
+            switch (letter)
+            {
+                case 'A':
+                    AddGrade(90);
+                    break;
+                case 'B':
+                    AddGrade(80);
+                    break;
+                case 'C':
+                    AddGrade(70);
+                    break;
+                case 'D':
+                    AddGrade(60);
+                    break;
+                case 'F':
+                    AddGrade(50);
+                    break;
+
+                default:
+                    AddGrade(0);
+                    break;
+            }
         }
     }
 }

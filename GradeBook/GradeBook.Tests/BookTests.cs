@@ -24,5 +24,15 @@ namespace GradeBook.Tests
 
 
         }
+        [Fact]
+        public void BookCalculateLetterGrade()
+        {
+            var book = new Book("book 1");
+            book.AddGrade(90);
+            book.AddGrade(90);
+            book.AddGrade(90);
+            Statistics stats = book.GetStatistics();
+            Assert.Equal('A', stats.LetterGrade);
+        }
     }
 }
