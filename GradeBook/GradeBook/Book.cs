@@ -8,15 +8,16 @@ namespace GradeBook
     {
         // grades is a private field and the convention is to make it lowercase 
         List<double> grades;
-        public string Name;
+        public string Name { get; set; }
 
-
-
-        public Book(string name)
+        // Readonly field can only be declared once, either initilization or in the constructor
+        public readonly string Category; 
+        public Book(string name, string category="N/A")
         {
             // You have to instantiate it to create the list of grades or it will give a null exception because of the grades field has not been instantiated 
-            grades = new List<double>() ;
+            grades = new List<double>() 
             Name = name;
+            Category = category;
 
         }
         public void InputGrade()
@@ -47,8 +48,7 @@ namespace GradeBook
             }
         }
 
-
-        public void AddGrade(double grade)
+        public void AddGrade(double grade) /*----------Overloaded method---------- */
         {
             if (grade <= 100 && grade >= 0)
             {
@@ -61,6 +61,31 @@ namespace GradeBook
             }
         }
 
+        public void AddGrade(char letter)/*----------- Overloaded method ----------*/
+        {
+            switch (letter)
+            {
+                case 'A':
+                    AddGrade(90);
+                    break;
+                case 'B':
+                    AddGrade(80);
+                    break;
+                case 'C':
+                    AddGrade(70);
+                    break;
+                case 'D':
+                    AddGrade(60);
+                    break;
+                case 'F':
+                    AddGrade(50);
+                    break;
+
+                default:
+                    AddGrade(0);
+                    break;
+            }
+        }
         // Return a instance of Statistics object that contains highest, lowest, and average grades
         public Statistics GetStatistics()
         {
@@ -101,30 +126,6 @@ namespace GradeBook
 
         }
 
-        public void AddLetterGrade(char letter)
-        {
-            switch (letter)
-            {
-                case 'A':
-                    AddGrade(90);
-                    break;
-                case 'B':
-                    AddGrade(80);
-                    break;
-                case 'C':
-                    AddGrade(70);
-                    break;
-                case 'D':
-                    AddGrade(60);
-                    break;
-                case 'F':
-                    AddGrade(50);
-                    break;
 
-                default:
-                    AddGrade(0);
-                    break;
-            }
-        }
     }
 }
