@@ -1,10 +1,48 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
+using System;
 using Xunit;
 
 namespace GradeBook.Tests
-{
+{   
+    // Creating a delegate type that will return a string 
+    // This is basically a type that points to methods with a particular parameter list and return type
+    // In this case something that returns a string and has a string parameter
+    public delegate string WriteLogDelegate(string logMessage);
     public class TypeTests
     {
+        [Fact]
+        public void WriteLogDelegateCanPointToMethods()
+        {
+            // Creating an delegate of type WriteLogDelegate 
+            WriteLogDelegate log;
+            // Pointing the delegate to the method RetunMessage 
+            // This works because a delegate and the method both have the same params and return value
+            log = ReturnMessage;
+            string result = log("From ReturnMessage");
+            // Check that log delegate is actually pointing to ReturnMessage Method
+            Assert.Equal("From ReturnMessage FIRST Method", result);
+            // ----------------------------------------------------------------------------------------------------
+            // Creating an delegate of type WriteLogDelegate 
+            WriteLogDelegate log2;
+            // Pointing the delegate to the method RetunMessage2 
+            // This works because a delegate and the method both have the same params and return value
+            log2 = ReturnMessage2;
+            string secondResult = log2("From ReturnMessage2");
+            // Check that log delegate is actually pointing to ReturnMessage2 Method
+            Assert.Equal("From ReturnMessage2 SECOND Method", secondResult);
+        }
+        string ReturnMessage(string message)
+        {
+            return ($"{message} FIRST Method"); 
+        }
+
+        string ReturnMessage2(string message)
+        {
+            return ($"{message} SECOND Method");
+        }
+    
+
+
 
         [Fact]
         public void ParametersArePassedByValue()
@@ -53,5 +91,7 @@ namespace GradeBook.Tests
         {
             book.Name = name;
         }
+
+        
     }
 }
