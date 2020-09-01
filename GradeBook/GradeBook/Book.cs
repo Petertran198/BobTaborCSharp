@@ -4,18 +4,28 @@ using System.Text;
 
 namespace GradeBook
 {
+    // convention to build a delegate to define an event u send a sender(person is sending this event) of type object
+    // Second is some form of event argument and we call it args 
+    // Also notice that this is not inside of Book class but inside of namespace GradeBook
+    public delegate void GradeAddedDelegate( object sender, EventArgs args);
+
+
     public class Book
     {
         // grades is a private field and the convention is to make it lowercase 
         List<double> grades;
         public string Name { get; set; }
-
         // Readonly field can only be declared once, either initilization or in the constructor
-        public readonly string Category; 
+        public readonly string Category;
+        // Defining a field of type GradeAddedDelegate in Book class
+        // By adding the keyword event this adds restriction to the delegate. You can not assign it to method but you can add method to it
+        // In another work .GradeAdded can only appear on the left hand side of += or -= 
+
+        public event GradeAddedDelegate GradeAdded;
         public Book(string name, string category="N/A")
         {
-            // You have to instantiate it to create the list of grades or it will give a null exception because of the grades field has not been instantiated 
-            grades = new List<double>() 
+            // You have to instantiate it to create the list of grades or it will give a null exception because of the grades field has not been instantiate
+            grades = new List<double>();
             Name = name;
             Category = category;
 
@@ -53,6 +63,12 @@ namespace GradeBook
             if (grade <= 100 && grade >= 0)
             {
                 grades.Add(grade);
+                // We check if GradeAdded is populated if it isnt than that means no one is listening or added a method reference into the delegate
+                if(GradeAdded != null)
+                {
+                    // if someone did added a method reference than we invoke the delegate 
+                    GradeAdded(this, new EventArgs());
+                }
             }
             else//If this is not run then it will throw an argument exception
             {
@@ -60,6 +76,7 @@ namespace GradeBook
                 throw new ArgumentException($"Invalid {nameof(grade)}");
             }
         }
+
 
         public void AddGrade(char letter)/*----------- Overloaded method ----------*/
         {
