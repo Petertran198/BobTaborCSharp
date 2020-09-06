@@ -19,9 +19,8 @@ namespace GradeBook
         // Defining a field of type GradeAddedDelegate in InMemoryBook class
         // By adding the keyword event this adds restriction to the delegate. You can not assign it to method but you can add method to it
         // In another work .GradeAdded can only appear on the left hand side of += or -= 
-
         public event GradeAddedDelegate GradeAdded;
-        public InMemoryBook(string name, string category="N/A") 
+        public  InMemoryBook(string name, string category = "N/A") : base(name)
         {
             // You have to instantiate it to create the list of grades or it will give a null exception because of the grades field has not been instantiate
             grades = new List<double>();
@@ -76,7 +75,7 @@ namespace GradeBook
             }
         }
         // Return a instance of Statistics object that contains highest, lowest, and average grades
-        public Statistics GetStatistics()
+        public override Statistics GetStatistics()
         {
             Statistics result = new Statistics();
             result.Average = 0.0;

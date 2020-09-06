@@ -30,8 +30,8 @@ namespace GradeBook
 
         }
         
-        // Takes in any type of book and allow you to enter grades
-        public static void EnterGrade(Book book)
+        // Takes in any type of book that has the IBook interface and allow you to enter grades
+        public static void EnterGrade(IBook book)
         {
             while (true)
             {
