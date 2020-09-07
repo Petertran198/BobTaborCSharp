@@ -47,18 +47,18 @@ namespace GradeBook.Tests
         [Fact]
         public void ParametersArePassedByValue()
         {
-            var book1 = new Book("book 1");
+            var book1 = new InMemoryBook("book 1");
             // Passed the value of book1(which contains a memory location) to GetBookSetName method  
-            // GetBookSetName then is reasigning that value with a new instance of Book 
+            // GetBookSetName then is reasigning that value with a new instance of InMemoryBook 
             // Therefore it isn't changing anything to the memory location of book1 and book1.Name is still book 1 outside the context of GetBookSetName
             GetBookSetName(book1, "New Name");
             
             Assert.Equal("book 1", book1.Name);
         }
 
-        private void GetBookSetName(Book book, string name)
+        private void GetBookSetName(InMemoryBook book, string name)
         {
-            book = new Book(name);
+            book = new InMemoryBook(name);
 
         }
 
@@ -73,7 +73,7 @@ namespace GradeBook.Tests
         [Fact]
         public void TwoVariablesCanReferenceSameObjects()
         {
-            var book = GetBook("Book 1");
+            var book = GetBook("InMemoryBook 1");
             var book2 = book;
             // The two varaiables holds the same value, and the value is a reference to one memory location
             Assert.Same(book, book2);
@@ -83,11 +83,11 @@ namespace GradeBook.Tests
             Assert.Equal("changed name", book2.Name);
 
         }
-        Book GetBook(string name)
+        InMemoryBook GetBook(string name)
         {
-            return new Book(name);
+            return new InMemoryBook(name);
         }
-         void ChangeName(Book book, string name)
+         void ChangeName(InMemoryBook book, string name)
         {
             book.Name = name;
         }

@@ -8,19 +8,19 @@ namespace GradeBook
     // All book will require a method called AddGrade that requires a double and returns nothing 
     public abstract class Book : NamedObject, IBook
     {
-        public Book(string name) : base(name)
+        public string Category { get; set; }
+        public Book(string name, string category) : base(name)
         {
             Name = name;
+            Category = category;
         }
 
-        public virtual event GradeAddedDelegate GradeAdded;
+        public abstract event GradeAddedDelegate GradeAdded;
 
         public abstract void AddGrade(double grade);
 
-        public virtual Statistics GetStatistics()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Statistics GetStatistics();
+        
         
     }
 

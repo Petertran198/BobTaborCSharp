@@ -14,7 +14,7 @@ namespace GradeBook
         static void Main(string[] args)
         {
 
-            InMemoryBook book = new InMemoryBook(name: "First Math book", category: "Math");
+            IBook book = new DiskBook(name: "Mathbook1", category: "Math");
             // Added OnGradeAdded method into the book.GradeAdded delegate 
             //Since this is an event delegate you can += or -= 
             // but you cant do something like book.GradeAdded = null 
