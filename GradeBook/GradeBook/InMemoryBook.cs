@@ -75,41 +75,14 @@ namespace GradeBook
         // Return a instance of Statistics object that contains highest, lowest, and average grades
         public override Statistics GetStatistics()
         {
-            Statistics result = new Statistics();
-            result.Average = 0.0;
-            result.HighestGrade = double.MinValue;
-            result.LowestGrade = double.MaxValue;
+            var result = new Statistics();
+
             foreach (var grade in grades)
             {
-                // finds the highest number of the two and assign it to result.High 
-                result.HighestGrade = Math.Max(grade, result.HighestGrade);
-                result.LowestGrade = Math.Min(grade, result.LowestGrade);
-                result.Average += grade;
+                result.AddGrade(grade);
             }
-
-
-            result.Average /= grades.Count;
-            switch (result.Average)
-            {
-                case var grade when (grade >= 90.0 && grade <= 100):
-                    result.LetterGrade = 'A';
-                    break;
-                case var grade when (grade >= 80.0 && grade < 90.0):
-                    result.LetterGrade = 'B';
-                    break; 
-                case var grade when (grade >= 70 && grade < 80):
-                    result.LetterGrade = 'C';
-                      break;
-                case var grade when (grade >= 60.0 && grade < 70):
-                    result.LetterGrade = 'D';
-                    break;
-                default:
-                    result.LetterGrade = 'F';
-                    break;
-            }
+            
             return result; 
-
-
         }
 
 

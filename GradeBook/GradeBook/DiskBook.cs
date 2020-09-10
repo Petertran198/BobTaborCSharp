@@ -20,12 +20,31 @@ namespace GradeBook
             using (var writer = File.AppendText($"../../../../{Name}.txt"))
             {
                 writer.WriteLine(grade);
+                if(GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
         }
 
         public override Statistics GetStatistics()
         {
-            throw new NotImplementedException();
+            var results = new Statistics();
+
+            using (var reader = File.OpenText($"../../../../{Name}.txt"))
+            {
+                var line = reader.ReadLine();
+                // While it isnt the end of the file
+                while (line != null)
+                {
+                    var number = double.Parse(line);
+                    results.AddGrade(number);
+                    line = reader.ReadLine();
+                }
+            }
+
+            return results;
+
         }
     }
 }
